@@ -31,6 +31,7 @@ public class TaskRunningIntegrationTest extends MifosIntegrationTestCase {
     MifosScheduler mifosScheduler;
 
     @Test
+    @Ignore
     public void testRunningSpecificTask() throws Exception {
         cleanuUpBatchTables();
         mifosScheduler = getMifosScheduler("org/mifos/framework/components/batchjobs/taskRunningTestTask.xml");
